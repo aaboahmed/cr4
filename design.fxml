@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="468.0" prefWidth="712.0" styleClass="pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rc4.Controller">
+   <children>
+      <Label fx:id="headerLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="229.0" layoutY="36.0" prefHeight="40.0" prefWidth="266.0" text="RC4 Algorithm" textAlignment="CENTER">
+         <font>
+            <Font name="Algerian" size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="messageTextField" alignment="CENTER" layoutX="76.0" layoutY="111.0" prefHeight="40.0" prefWidth="572.0" promptText="message">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="KeyTextField" alignment="CENTER" layoutX="76.0" layoutY="214.0" prefHeight="40.0" prefWidth="572.0" promptText="key">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="encryptButton" alignment="CENTER" contentDisplay="CENTER" layoutX="76.0" layoutY="304.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="175.0" text="encrypt" textAlignment="CENTER">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding>
+      </Button>
+      <Button fx:id="decryptButton" alignment="CENTER" contentDisplay="CENTER" layoutX="473.0" layoutY="304.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="175.0" text="decrypt" textAlignment="CENTER">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding>
+      </Button>
+      <Label fx:id="encryptedLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="231.0" layoutY="398.0" prefHeight="40.0" prefWidth="266.0" style="-fx-background-color: #ced8ed;" text="Encrypted message" textAlignment="CENTER" textFill="#005f59">
+         <font>
+            <Font name="Century" size="22.0" />
+         </font>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+   </children>
+</Pane>
